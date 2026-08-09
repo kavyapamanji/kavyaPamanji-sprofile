@@ -113,3 +113,32 @@ footer {
 .skills li:hover {
     transform: translateY(-4px);
 }
+.projects ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 0;
+}
+
+.projects li {
+    list-style: none;
+    background: linear-gradient(135deg, #ede9fe, #dbeafe);
+    padding: 22px;
+    border-radius: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #c4b5fd;
+    transition: 0.3s;
+}
+
+.projects li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 600px) {
+    .projects ul {
+        grid-template-columns: 1fr;
+    }
+}
