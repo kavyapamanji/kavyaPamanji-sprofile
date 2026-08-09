@@ -98,3 +98,18 @@ footer {
         font-size: 24px;
     }
 }
+.skills li {
+    display: inline-block;
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: white;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 20px;
+    font-weight: bold;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+    transform: translateY(-4px);
+}
